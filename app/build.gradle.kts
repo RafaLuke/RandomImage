@@ -37,11 +37,6 @@ android {
 
 dependencies {
 
-    implementation(Dependencies.KTX_CORE)
-
-    implementation(Dependencies.APPCOMPAT)
-    implementation(Dependencies.CONSTRAINT_LAYOUT)
-    implementation(Dependencies.DATA_BINDING)
-
-    implementation(Dependencies.GLIDE)
+    implementation(libs.bundles.androidx)
+    implementation(libs.glide)
 }
