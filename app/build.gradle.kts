@@ -1,18 +1,19 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id(Plugins.ANDROID_APPLICATION)
+    id(Plugins.KOTLIN_ANDROID)
 }
 
+
 android {
-    namespace = "es.babel.geekypeel.versioncatalogs.randomimage"
-    compileSdk = 34
+    namespace = AndroidConfiguration.APPLICATION_ID
+    compileSdk = AndroidConfiguration.COMPILE_SDK_VERSION
 
     defaultConfig {
-        applicationId = "es.babel.geekypeel.versioncatalogs.randomimage"
-        minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = AndroidConfiguration.APPLICATION_ID
+        minSdk = AndroidConfiguration.MIN_SDK_VERSION
+        targetSdk = AndroidConfiguration.TARGET_SDK_VERSION
+        versionCode = AndroidConfiguration.VERSION_CODE
+        versionName = AndroidConfiguration.VERSION_NAME
     }
 
     buildFeatures {
@@ -36,10 +37,11 @@ android {
 
 dependencies {
 
-    implementation ("androidx.core:core-ktx:1.9.0")
-    implementation ("androidx.appcompat:appcompat:1.6.1")
-    implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation(Dependencies.KTX_CORE)
 
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
-    implementation ("androidx.databinding:databinding-runtime:8.4.1")
+    implementation(Dependencies.APPCOMPAT)
+    implementation(Dependencies.CONSTRAINT_LAYOUT)
+    implementation(Dependencies.DATA_BINDING)
+
+    implementation(Dependencies.GLIDE)
 }
