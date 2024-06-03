@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RI</string>
+
+    <string name="main_activity_load_image_error_dialog_title">Atención</string>
+    <string name="main_activity_load_image_error_dialog_message">No se ha podido cargar la imagen</string>
+    <string name="main_activity_load_image_error_dialog_button">Aceptar</string>
+
+    <string name="main_activity_load_image_url_pattern">https://picsum.photos/%1$d/%2$d</string>
+</resources>
